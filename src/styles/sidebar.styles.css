@@ -1,0 +1,35 @@
+.sidebar {
+  color: white;
+  flex: 0.75;
+  height: 92vh;
+  background: rgb(40, 40, 82);
+}
+.sidebar__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.sidebar__links svg {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.sidebar__link {
+  margin: 1.5rem 0;
+  padding: 4px 1rem;
+}
+
+.sidebar__link:hover {
+  border-left: 3px solid rgb(211, 190, 74);
+  padding: 4px 13px;
+}
+
+.sidebar__link:hover,
+.grey-icon:hover,
+.chart-details__footer--trash-icon:hover {
+  color: #adaaaa;
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+@media (min-width: 1700px) {
+  html {
+    font-size: 30px !important;
+  }
+}
+
+/* LapTop Design */
+@media (max-width: 1100px) {
+  body {
+    font-weight: 400 !important;
+  }
+  .chart-container,
+  .chart-details {
+    width: 85% !important;
+  }
+  .stats {
+    flex: 1.55;
+  }
+}
+/* tablet Design */
+
+@media (max-width: 900px) {
+  body {
+    font-weight: 300 !important;
+  }
+  .sidebar {
+    display: none;
+  }
+  .stats {
+    flex: 1.25;
+  }
+}
+/* Mobile screens */
+
+@media (max-width: 700px) {
+  .dashboard__head {
+    display: none;
+  }
+  .dashboard {
+    flex-direction: column;
+  }
+  .chart-container,
+  .chart-details {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .header {
+    height: 12vh;
+    border-bottom: 1px solid rgb(214, 209, 209);
+  }
+  .header-icons-search-input {
+    padding: 0 3px;
+  }
+  .header__logo-container {
+    margin: 0.5rem 1rem;
+    width: 3.5rem;
+    height: 2rem;
+  }
+  .header__icons--user_image-container {
+    margin: 0 0.5rem;
+  }
+
+  .stats {
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .header__logo-container {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+  .header-icons {
+    justify-content: space-between !important;
+    padding-top: 1.5rem;
+  }
+  .header-icons svg {
+    margin: 0 1rem !important;
+  }
+}

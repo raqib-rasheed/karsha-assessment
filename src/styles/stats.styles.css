@@ -1,0 +1,26 @@
+.stats {
+  flex: 1.15;
+}
+
+.stats-column-1__row:not(:last-child),
+.stats-column-2__row-2:not(:last-child) {
+  height: 19%;
+}
+.stats-column-1__row,
+.stats-column-2__row-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.stats-column-1__row:first-child {
+  border-right: 2px solid rgba(196, 195, 195, 0.719);
+}
+
+.stats-column-1__row:not(:nth-last-child(-n + 2)),
+.stats-column-2__row-2:not(:nth-last-child(-n + 2)) {
+  border-bottom: 2px solid rgba(196, 195, 195, 0.719);
+}
+
+.stats-column-2__row-2 {
+  padding: 0 1rem;
+}

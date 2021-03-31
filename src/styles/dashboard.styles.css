@@ -1,0 +1,42 @@
+.dashboard {
+  display: flex;
+  height: 92vh;
+  justify-content: flex-start;
+}
+
+.dashboard__head {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard__head-select {
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.dashboard__project {
+  height: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: rgba(223, 222, 222, 0.842);
+}
+
+.chart-details__body {
+  border-bottom: 1px solid rgba(196, 195, 195, 0.719);
+}
+
+.chart-container,
+.chart-details {
+  width: 70%;
+  height: 40%;
+  margin: 1rem 0;
+}
+.chart-details {
+  height: 50%;
+}
+
+.br-right {
+  border-right: 2px solid rgba(196, 195, 195, 0.719);
+}
