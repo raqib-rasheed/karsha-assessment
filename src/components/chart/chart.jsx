@@ -1,14 +1,18 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Card } from "react-bootstrap";
 import { Pie } from "react-chartjs-2";
 
 export default function Chart() {
-  const [chartData, setChartData] = useState({
-    a: 51,
-    b: 6,
-    d: 24,
-    c: 15,
-  });
+  const [chartData, setChartData] = useState({});
+  useEffect(() => {
+    //value for the chart assigned.
+    return setChartData({
+      a: 51,
+      b: 6,
+      d: 24,
+      c: 15,
+    });
+  }, []);
   const chartDataSet = useMemo(() => {
     return Object.values(chartData);
   }, [chartData]);
